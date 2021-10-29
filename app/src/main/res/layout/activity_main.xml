@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#976393">
+
+    <TextView
+        android:id="@+id/lbl_acelerometro"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="166dp"
+        android:text="Acelerómetro:"
+        android:textColor="#feda84"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/lbl_acelerometroValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_acelerometro"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        android:textColor="#feda84"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/lbl_lightSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_acelerometroValue"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Sensor de Luz:"
+        android:textColor="#feda84"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/lbl_lightSensorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_lightSensor"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        android:textColor="#feda84"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/lbl_gravitySensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_lightSensorValue"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Sensor de gravedad"
+        android:textColor="#feda84"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/lbl_gravitySensorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_gravitySensor"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        android:textColor="#feda84" />
+
+    <TextView
+        android:id="@+id/lbl_magneticSensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_gravitySensorValue"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:text="Sensor de magnetismo"
+        android:textColor="#feda84"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/lbl_magneticSensorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_magneticSensor"
+        android:layout_marginLeft="16dp"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:text="-"
+        android:textColor="#feda84"/>
+
+    <Button
+        android:id="@+id/btn_sensorList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="500dp"
+        android:layout_marginBottom="0dp"
+        android:background="#43457f"
+        android:backgroundTint="#43457f"
+        android:text="Lista de Sensores" />
+
+
+</RelativeLayout>
